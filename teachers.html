@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>শিক্ষকবৃন্দ — মাদরাসা ব্লগ</title>
+  <meta name="description" content="মাদরাসার সম্মানিত শিক্ষকবৃন্দের পরিচিতি ও যোগাযোগ।" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="container inner">
+      <a class="brand" href="index.html">
+        <span class="logo">BS</span>
+        <span>মাদরাসা ব্লগ</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">হোম</a>
+        <a href="teachers.html">শিক্ষকবৃন্দ</a>
+        <a href="students.html">শিক্ষার্থী</a>
+        <a href="committee.html">কমিটি</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="মোবাইল মেনু">মেনু ▾</button>
+    </div>
+    <div class="container mobile-menu">
+      <a href="index.html">হোম</a>
+      <a href="teachers.html">শিক্ষকবৃন্দ</a>
+      <a href="students.html">শিক্ষার্থী</a>
+      <a href="committee.html">কমিটি</a>
+    </div>
+  </div>
+
+
+<main class="container section">
+  <header style="margin-bottom:1rem">
+    <h1>শিক্ষকবৃন্দ</h1>
+    <p class="meta">মাদরাসার সকল শিক্ষক—বিষয়, পদবী ও যোগাযোগসহ।</p>
+    <div class="search">
+      <input id="tSearch" placeholder="নাম/বিষয় দিয়ে খুঁজুন…" oninput="filterCards('tSearch','tlist')" />
+      <button onclick="document.getElementById('tSearch').value='';filterCards('tSearch','tlist')">রিসেট</button>
+    </div>
+  </header>
+
+  <section class="grid grid-3 tlist">
+    <!-- Sample teacher cards -->
+    <div class="card">
+      <div class="row">
+        <div class="avatar">AK</div>
+        <div>
+          <div class="title">মাওলানা আবুল কাসেম</div>
+          <div class="meta">সিনিয়র মুহাদ্দিস • হাদিস</div>
+        </div>
+      </div>
+      <p>অভিজ্ঞতা: ১২ বছর • যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">RS</div>
+        <div>
+          <div class="title">মাওলানা রাশেদুল ইসলাম</div>
+          <div class="meta">মুফতি • ফিকহ</div>
+        </div>
+      </div>
+      <p>অভিজ্ঞতা: ৯ বছর • যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">NH</div>
+        <div>
+          <div class="title">নুসরাত হোসাইন</div>
+          <div class="meta">প্রভাষক • বাংলা</div>
+        </div>
+      </div>
+      <p>অভিজ্ঞতা: ৬ বছর • যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">MS</div>
+        <div>
+          <div class="title">মাহমুদুস সামাদ</div>
+          <div class="meta">শিক্ষক • গণিত</div>
+        </div>
+      </div>
+      <p>অভিজ্ঞতা: ৭ বছর • যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">SH</div>
+        <div>
+          <div class="title">সাদিয়া হক</div>
+          <div class="meta">শিক্ষিকা • ইংরেজি</div>
+        </div>
+      </div>
+      <p>অভিজ্ঞতা: ৫ বছর • যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">MM</div>
+        <div>
+          <div class="title">মাওলানা মিজানুর রহমান</div>
+          <div class="meta">কোরআন তিলাওয়াত • তাজবিদ</div>
+        </div>
+      </div>
+      <p>অভিজ্ঞতা: ১০ বছর • যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> মাদরাসা ব্লগ • নির্মাণে ভালোবাসা
+      <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+    </div>
+  </footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

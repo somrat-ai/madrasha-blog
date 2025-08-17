@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>কমিটি — মাদরাসা ব্লগ</title>
+  <meta name="description" content="পরিচালনা কমিটির সদস্যবৃন্দ, সভার কার্যবিবরণী ও সিদ্ধান্তসমূহ।" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="container inner">
+      <a class="brand" href="index.html">
+        <span class="logo">BS</span>
+        <span>মাদরাসা ব্লগ</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">হোম</a>
+        <a href="teachers.html">শিক্ষকবৃন্দ</a>
+        <a href="students.html">শিক্ষার্থী</a>
+        <a href="committee.html">কমিটি</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="মোবাইল মেনু">মেনু ▾</button>
+    </div>
+    <div class="container mobile-menu">
+      <a href="index.html">হোম</a>
+      <a href="teachers.html">শিক্ষকবৃন্দ</a>
+      <a href="students.html">শিক্ষার্থী</a>
+      <a href="committee.html">কমিটি</a>
+    </div>
+  </div>
+
+
+<main class="container section">
+  <header style="margin-bottom:1rem">
+    <h1>পরিচালনা কমিটি</h1>
+    <p class="meta">সদস্যদের তালিকা ও সাম্প্রতিক সিদ্ধান্ত।</p>
+
+    <div class="search">
+      <input id="cSearch" placeholder="নাম/পদবী দিয়ে খুঁজুন…" oninput="filterCards('cSearch','clist')" />
+      <button onclick="document.getElementById('cSearch').value='';filterCards('cSearch','clist')">রিসেট</button>
+    </div>
+  </header>
+
+  <section class="grid grid-3 clist">
+    <div class="card">
+      <div class="row">
+        <div class="avatar">PS</div>
+        <div>
+          <div class="title">প্রফেসর সামসুল আলম</div>
+          <div class="meta">সভাপতি</div>
+        </div>
+      </div>
+      <p>যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">SG</div>
+        <div>
+          <div class="title">সৈয়দা গুলশান আরা</div>
+          <div class="meta">সহ-সভাপতি</div>
+        </div>
+      </div>
+      <p>যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">MA</div>
+        <div>
+          <div class="title">মোঃ আব্দুল্লাহ</div>
+          <div class="meta">সাধারণ সম্পাদক</div>
+        </div>
+      </div>
+      <p>যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">NH</div>
+        <div>
+          <div class="title">নাহিদ হাসান</div>
+          <div class="meta">কোষাধ্যক্ষ</div>
+        </div>
+      </div>
+      <p>যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">SK</div>
+        <div>
+          <div class="title">শবনম করিম</div>
+          <div class="meta">সদস্য</div>
+        </div>
+      </div>
+      <p>যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="avatar">MR</div>
+        <div>
+          <div class="title">মোঃ রফিকুল ইসলাম</div>
+          <div class="meta">সদস্য</div>
+        </div>
+      </div>
+      <p>যোগাযোগ: 01XXXXXXXXX</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card">
+      <div class="title">সাম্প্রতিক সভার কার্যবিবরণী (নমুনা)</div>
+      <p class="meta">তারিখ: ৩১ জুলাই ২০২৫</p>
+      <ul>
+        <li>নতুন লাইব্রেরি কক্ষ স্থাপনের অনুমোদন।</li>
+        <li>আইটি ল্যাবের জন্য ১০টি কম্পিউটার ক্রয়।</li>
+        <li>ছাত্রবৃত্তি তহবিল বৃদ্ধি।</li>
+      </ul>
+      <a class="btn" href="#">পূর্ণ কার্যবিবরণী (PDF)</a>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      © <span id="year"></span> মাদরাসা ব্লগ • নির্মাণে ভালোবাসা
+      <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+    </div>
+  </footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
